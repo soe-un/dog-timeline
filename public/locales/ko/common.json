@@ -1,0 +1,16 @@
+{
+  "title": "비상계엄령 사태 타임라인",
+  "RED": "여당 의원",
+  "BLUE": "야당 의원",
+  "ORANGE": "국회",
+  "PURPLE": "대통령",
+  "GREEN": "군",
+  "PINK": "경찰",
+  "WINE": "검찰",
+  "GRAY": "대법원",
+  "BROWN": "해외채널 / 기타",
+  "WHITE": "시민",
+  "(legislative)": "(입법부)",
+  "(judicial)": "(사법부)",
+  "(executive)": "(행정부)"
+}
