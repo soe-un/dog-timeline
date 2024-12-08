@@ -29,10 +29,12 @@ export default function Home() {
             const data = await import(`../data/${d}`).then((res) => {
               return (
                 <Day
+                  key={d}
                   date={d}
                   childrens={res.default.map((data: TLINES) => {
                     return (
                       <Lines
+                        key={data.time + data.value}
                         type={data.type}
                         time={data.time}
                         people={data.people}
