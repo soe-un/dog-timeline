@@ -1,3 +1,6 @@
+"use client";
+import { useState } from "react";
+
 export default function Day({
   date,
   childrens,
@@ -5,12 +8,17 @@ export default function Day({
   date: string;
   childrens: React.ReactElement;
 }) {
+  const [show, setShow] = useState(true);
   return (
     <div>
-      <div className="m-1 text-center">
+      <div
+        className="m-1 text-center"
+        onClick={(e) => setShow((prev) => !prev)}
+      >
         {[date[0], date[1]]}/{[date[2], date[3]]}/{[date[4], date[5]]}
       </div>
-      <div className="m-1 gap-1 grid grid-col-1">{childrens}</div>
+
+      {show && <div className="m-1 gap-1 grid grid-col-1">{childrens}</div>}
     </div>
   );
 }

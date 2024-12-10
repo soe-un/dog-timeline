@@ -1,3 +1,5 @@
+"use client";
+
 import { LabelRecord, TLABEL } from "@/types/type";
 import clsx from "clsx";
 import common from "../../public/locales/ko/common.json";

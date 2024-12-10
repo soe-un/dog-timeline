@@ -1,3 +1,5 @@
+"use client";
+
 import { LabelRecord, TLINES } from "@/types/type";
 import clsx from "clsx";
 
@@ -10,6 +12,7 @@ export default function Lines({ type, time, people, value }: TLINES) {
       }}
       className={clsx(
         `flex rounded-sm px-2 py-1  divide-x`,
+        `hover:shadow-inner hover:shadow-black`,
         type === "WHITE" ? "divide-black" : "divide-white"
       )}
     >

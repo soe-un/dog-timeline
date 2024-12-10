@@ -4,14 +4,32 @@ import { LABELS, TLABEL, TLINES } from "@/types/type";
 import Lines from "@/components/lines";
 import Day from "@/components/day";
 import { dates } from "@/data";
+import { Hahmlet } from "next/font/google";
+import clsx from "clsx";
+
+const hahmlet = Hahmlet({ subsets: ["latin"] });
 
 export default function Home() {
   const ko = common;
 
+  // const fetchDateData = async ({ date }: { date: string }) => {
+  //   const res = await fetch(`/api/${date}`);
+  //   const data = await res.json();
+  //   console.log(fetchDateData);
+  //   return data;
+  // };
+
+  // fetchDateData({ date: "241208" });
+
   return (
     <>
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start m-4">
-        <h1>{ko.title}</h1>
+      <main
+        className={clsx(
+          `flex flex-col items-start gap-8 row-start-2 items-center m-4`,
+          hahmlet.className
+        )}
+      >
+        <h1 className="font-bold text-center w-full text-xl">{ko.title}</h1>
         <div className="grid grid-cols-4 gap-1 w-full">
           <Label type={LABELS.RED as TLABEL} />
           <Label type={LABELS.BLUE as TLABEL} />
