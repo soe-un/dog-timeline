@@ -50,7 +50,7 @@ const data: TLINES[] = [
     value: `"개인사유로 국회 정보위 불참"`,
   },
   {
-    type: LABELS.RED as TLABEL,
+    type: LABELS.BLUE as TLABEL,
     time: `10:52`,
     people: `박찬대(더불어민주당 의원)`,
     value: `"만일 탄핵안 부결되면 즉각 임시국회서 재추진"`,
