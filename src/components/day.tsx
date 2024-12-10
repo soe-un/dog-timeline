@@ -11,10 +11,7 @@ export default function Day({
   const [show, setShow] = useState(true);
   return (
     <div>
-      <div
-        className="m-1 text-center"
-        onClick={(e) => setShow((prev) => !prev)}
-      >
+      <div className="m-1 text-center" onClick={() => setShow((prev) => !prev)}>
         {[date[0], date[1]]}/{[date[2], date[3]]}/{[date[4], date[5]]}
       </div>
 
