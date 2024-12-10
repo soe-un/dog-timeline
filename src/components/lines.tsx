@@ -16,14 +16,14 @@ export default function Lines({ type, time, people, value }: TLINES) {
         type === "WHITE" ? "divide-black" : "divide-white"
       )}
     >
-      <div className="w-[10%] px-2 py-1 break-all">{time}</div>
+      <div className="w-[15%] lg:w-[10%] px-2 py-1 break-all">{time}</div>
       {people ? (
         <>
-          <div className="w-[30%] px-2 py-1 break-all">{people}</div>
-          <div className="w-[60%] px-2 py-1 break-all">{value}</div>
+          <div className="w-[35%] lg:w-[30%] px-2 py-1 break-all">{people}</div>
+          <div className="w-[50%] lg:w-[60%] px-2 py-1 break-all">{value}</div>
         </>
       ) : (
-        <div className="w-[90%] px-2 py-1 break-all">{value}</div>
+        <div className="w-[80%] lg:w-[90%] px-2 py-1 break-all">{value}</div>
       )}
     </div>
   );
