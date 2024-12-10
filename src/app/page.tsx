@@ -6,7 +6,6 @@ import Day from "@/components/day";
 import { dates } from "@/data";
 import { Hahmlet } from "next/font/google";
 import clsx from "clsx";
-import { useEffect, useState } from "react";
 
 const hahmlet = Hahmlet({ subsets: ["latin"] });
 
